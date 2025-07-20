@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | SwarVardhini Music Academy</title>
+    <p style="font-size: 24px; text-align:center;">🎵 🎶 🎵 🎶 🎵</p>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #fff8e1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #800000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #800000;
+            font-weight: bold;
+        }
+        .tambora-image {
+            margin-top: 15px;
+        }
+        .note{
+            position: fixed;
+            top: -50px;
+            font-size: 24px;
+            animation: fall 5s linear infinite;
+            color: #800000;
+        }
+
+        @keyframes fall {
+            0% {top: -50px; opacity: 1;}
+            100% {top: 100vh; opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SwarVardhini Music Academy</h1>
+        <div class="tambora-image">
+            <img src="{{ url_for('static', filename='tambora.png') }}" alt="Tambora Symbol" height="100">
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a> |
+        <a href="/schedule">Schedule</a> |
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <main style="font-weight: bold; font-size: 20px; text-align:center;">
+        <p><strong>Enriching Lives Through the Art of Vocal Music!<strong></p>
+    </main>
+    <!-- Raining Music Notes -->
+    <div class="note" style="left: 10%;">🎵</div>
+    <div class="note" style="left: 30%;">🎶</div>
+    <div class="note" style="left: 50%;">🎵</div>
+    <div class="note" style="left: 70%;">🎶</div>
+    <div class="note" style="left: 90%;">🎵</div>
+
+</body>
+</html>
