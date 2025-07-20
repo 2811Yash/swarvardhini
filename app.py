@@ -18,6 +18,6 @@ def schedule():
 @app.route('/contact')
 def contact():
     return render_template("contact.html")
-
-def handler(environ, start_response):
-    return app.wsgi_app(environ, start_response)
+            
+if __name__ == "__main__":
+    app.run(debug=True)
